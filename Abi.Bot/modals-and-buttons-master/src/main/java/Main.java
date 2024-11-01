@@ -9,14 +9,14 @@ public class Main {
     public static void main(String[] args) throws LoginException, InterruptedException {
 
         // Erstellt eine JDA-Instanz mit dem Bot-Token
-        JDA jda = JDABuilder.createDefault("")
+        JDA jda = JDABuilder.createDefault("TOKEN")
                 .setActivity(Activity.listening("CHABOS Babos"))
                 .addEventListeners(new SupCommand(), new ModalListener(), new ButtonListener())
                 .build().awaitReady(); // Warte, bis der Bot vollständig bereit ist
 
 
         //Registriere die Slash-Befehle als Gilden befehl (Guild Command)
-        Guild guild = jda.getGuildById("1199631875434631250");
+        Guild guild = jda.getGuildById("IIIDDDDD");
 
         if (guild != null) {
             // Registriere den "sup"-Befehl mit einer Beschreibung
