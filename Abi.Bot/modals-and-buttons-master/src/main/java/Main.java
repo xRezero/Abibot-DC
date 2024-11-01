@@ -9,7 +9,7 @@ public class Main {
     public static void main(String[] args) throws LoginException, InterruptedException {
 
         // Erstellt eine JDA-Instanz mit dem Bot-Token
-        JDA jda = JDABuilder.createDefault("MTE5OTYyOTI5NjQyNDE5ODIwNQ.GYh34y.7WQo9faruiWCfiKqMArWTXorqVeQcbaVNDrQj4")
+        JDA jda = JDABuilder.createDefault("")
                 .setActivity(Activity.listening("CHABOS Babos"))
                 .addEventListeners(new SupCommand(), new ModalListener(), new ButtonListener())
                 .build().awaitReady(); // Warte, bis der Bot vollständig bereit ist
